@@ -9,7 +9,7 @@ reg[27:0] data,q_tc;
 always @(testmode)
 begin
      if (testmode == 1'b0) 
-	    data <= 28'h5f5e0ff;   // 99999999 in binary, cuz the clock is up to 100MHz
+	    data <= 28'h5f5e0ff;   // 99999999 in decimal, cuz the clock is up to 100MHz
 	 else 
 	    data <= 28'h0000009;
 end
