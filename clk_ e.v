@@ -6,11 +6,6 @@ output reg[1:0] tc_timebase;
 
 reg[27:0] data,q_tc;
 
-//option1
-assign data = (!testmode) ?  28'h5f5e0ff : 
-           (testmode) ?  28'h0000009 :
-           0;
-//option2
 always @(testmode)
 begin
      if (testmode == 1'b0) 
